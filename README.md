@@ -20,3 +20,10 @@ These tasks make moving data around Heroku apps easier. If you use Postgres loca
 	rake pg_sync:production_to_local   # Capture a backup of production and restore to your local database
 	rake pg_sync:production_to_staging # Capture a backup of production and restore to your staging database
 	rake pg_sync:staging_to_local      # Capture a backup of staging and restore to your local database
+
+rspec.rake
+----------
+
+Since installing Rspec doesn't make you a nice Rake task like Cucumber does, I've been carrying this task around on projects. All it does is run all your specs:
+
+	rake spec # Run all specs
